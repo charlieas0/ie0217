@@ -1,8 +1,9 @@
 #include<iostream>
 using namespace std;
-
+// Definiendo la clase molde
 class Molde{
     public:
+    // Parametros
      double largo;
      double ancho;
      double altura;
@@ -12,10 +13,11 @@ class Molde{
         cout << "iniciando un objeto de la clase room"<<endl;
         
      }
-
+      // Calculando el area.
      double calcularArea(){
         return largo*ancho;
      }
+     // calculando el volumen.
      double calcularVolumen(){
         return largo * ancho * altura;
      }
