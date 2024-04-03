@@ -4,7 +4,7 @@ Charlie Arroyo Sanchez.
 B90765.
 IE0217
 Fecha de entrega: 03/04/24.
-Tarea #1
+Tarea #1.
 */
 
 // ------------------------------------------
