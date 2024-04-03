@@ -11,4 +11,4 @@ UCR
 void limpiar();
 void espera();
 
-#endif //
+#endif 
