@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+// clase animal
 class Animal{
     public:
         void eat(){
