@@ -205,7 +205,7 @@ Esto no sólo llena toda la memoria, sino también genera un menor rendimiento d
 
 [memory](https://ccia.ugr.es/~jfv/ed1/c++/cdrom3/TIC-CD/web/tema23/teoria_1.ht)
 [puntero](https://www.cplusplus.com/doc/tutorial/pointers)
-[flujo]( https://nvie.com/posts/a-successful-git-branching-model/)
+[flujo](https://nvie.com/posts/a-successful-git-branching-model/)
 [pull](https://docs.github.com/es/pull-requests)
 
 
