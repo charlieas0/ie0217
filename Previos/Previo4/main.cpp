@@ -3,7 +3,7 @@
 
 using namespace std;
 
-
+// codigo fuente.
 int main(){
     Persona p("Juan", 25);
 

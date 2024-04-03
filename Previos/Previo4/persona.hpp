@@ -4,7 +4,7 @@
 #include <string>
 
 using namespace std;
-
+// Generando la clase persona.
 class Persona{
     private:
     string nombre;

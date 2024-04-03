@@ -1,6 +1,8 @@
 #include "persona.hpp"
 using namespace std;
 
+
+// Funciones.
 Persona::Persona(string nombre,int edad){
     this ->nombre = nombre;
     this ->edad =  edad;
