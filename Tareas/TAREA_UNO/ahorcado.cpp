@@ -98,7 +98,7 @@ void mostrarMenu() {
 // Variable global
 string nuevaPalabra;
 
-// Función para el menú interactivo
+// Función para el menú interactivo.
 void menu(Ahorcado& juego,int& intentos_maximos, string palabras[], int& numPalabras) {
     char eleccion;
     while (true) {
