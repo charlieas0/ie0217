@@ -1,8 +1,9 @@
 #include <iostream>
 #include<fstream>
 using namespace std;
-
+// generando clase archivo
 class Archivo{
+    // privado
     private:
     fstream archivo;
     
