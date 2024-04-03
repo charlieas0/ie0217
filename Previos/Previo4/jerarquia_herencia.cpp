@@ -15,7 +15,7 @@ class Cat : public Animal{
     public:
     void meow(){cout<< "I am a Cat. Meow" << endl;}
 };
-
+// Jerarquia multinivel
 int main (){
     // Create object of dog class
     Dog dog1;
