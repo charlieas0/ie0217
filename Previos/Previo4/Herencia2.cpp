@@ -16,7 +16,7 @@ class Derived : public Base {
 
         }
 };
-
+// Sobreescritura de funciones en la herencia.
 int main(){
     Derived derived1,derived2;
     derived1.print();

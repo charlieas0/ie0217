@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-
+// clase base
 class Base{
     public:
         void print(){
