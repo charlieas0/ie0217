@@ -95,7 +95,7 @@ void mostrarMenu() {
 }
 
 
-// Variable global
+// Variable global.
 string nuevaPalabra;
 
 // Función para el menú interactivo.
