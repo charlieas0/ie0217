@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+// Clase estudiantes
 class Student{
 
     public:
@@ -11,6 +11,8 @@ class Student{
         }
 };
 
+//Generando funcion
+// Se puede usar las clases como parametros de funciones?
 void calculateAverage(Student s1, Student s2){
     double average = (s1.marks + s2.marks) / 2;
 
