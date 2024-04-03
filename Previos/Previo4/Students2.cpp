@@ -5,7 +5,7 @@ class Student{
     public:
         double marks1, marks2;
 };
-
+// Retornando objetos
 Student createStudent(){
     Student student;
 
