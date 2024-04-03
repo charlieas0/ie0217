@@ -18,7 +18,7 @@ struct Ahorcado {
     int intentos_actuales;
 };
 
-// Declarando las funciones.
+// Declarando las funciones
 void inicializar(Ahorcado& juego, const std::string palabras[], int numPalabras, int intento_max);
 void adivinarLetra(Ahorcado& juego, char letra);
 bool verificarAdivinanza(Ahorcado& juego);
