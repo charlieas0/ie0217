@@ -12,7 +12,7 @@ class ClassA{
         friend class ClassB;
 };
 
-
+// classes amigas
 class ClassB{
     public:
         ClassB() : numB(1){}

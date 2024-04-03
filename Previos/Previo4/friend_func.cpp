@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-
+//funciones clases amigas.
 class Distance{
     private:
         int meter;

@@ -2,7 +2,7 @@
 using namespace std;
 
 class ClassB;
-
+// clases amigas.
 class ClassA{
     public:
         ClassA() : numA(12){}
