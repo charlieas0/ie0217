@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-
+// Definiendo la clase animal
 class Animal{
     public:
         void setEdad(int age){
@@ -18,7 +18,7 @@ class Animal{
         int edad;
 };
 
-
+// Tomando la clase animal para la clase perro
 class Perro : public Animal{
     public:
         void setNombre(string n){
@@ -32,6 +32,7 @@ class Perro : public Animal{
 
 
 int main(){
+    // Usando la clase perro 
     Perro miperro;
     miperro.setNombre("Toby");
     miperro.setEdad(3);
