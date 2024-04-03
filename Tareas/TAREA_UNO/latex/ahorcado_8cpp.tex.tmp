@@ -1,0 +1,97 @@
+\hypertarget{ahorcado_8cpp}{}\doxysection{Referencia del Archivo ahorcado.\+cpp}
+\label{ahorcado_8cpp}\index{ahorcado.cpp@{ahorcado.cpp}}
+{\ttfamily \#include \char`\"{}ahorcado.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include \char`\"{}pantalla.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Dependencia gráfica adjunta para ahorcado.\+cpp\+:
+% FIG 0
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ahorcado_8cpp_a9e7bb86143a16249f65b208000d709bf}{inicializar}} (\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&juego, const std\+::string palabras\mbox{[}$\,$\mbox{]}, int num\+Palabras, int intento\+\_\+max)
+\begin{DoxyCompactList}\small\item\em inicializar Se inicializa el programa \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ahorcado_8cpp_a45c9adede9da85c2e6b4041dc4d3fe42}{adivinar\+Letra}} (\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&juego, char letra)
+\begin{DoxyCompactList}\small\item\em Adivinar\+Letra El usuario adivina o no la palabra. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{ahorcado_8cpp_a7db7c76db6249b9f33c9cff2e4018814}{verificar\+Adivinanza}} (\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&juego)
+\begin{DoxyCompactList}\small\item\em verificar\+Adivinanza \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ahorcado_8cpp_a7da5ae4c130c92c4cbff8b6c2f5e84ec}{jugar\+Juego}} (\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&juego)
+\begin{DoxyCompactList}\small\item\em jugar\+Juego Funcion para jugarlo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ahorcado_8cpp_ac0aca0f34a52fbe7527a03517bc3347e}{mostrar\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em mostrar\+Menu Muentra el menu en pantalla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ahorcado_8cpp_aa65a0f98f8c33b993dc267dcb33c89ef}{menu}} (\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&juego, int \&intentos\+\_\+maximos, string palabras\mbox{[}$\,$\mbox{]}, int \&num\+Palabras)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{ahorcado_8cpp_acccf29e4a5b0a81cb961e801765209d3}{nueva\+Palabra}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{ahorcado_8cpp_a45c9adede9da85c2e6b4041dc4d3fe42}\label{ahorcado_8cpp_a45c9adede9da85c2e6b4041dc4d3fe42}} 
+\index{ahorcado.cpp@{ahorcado.cpp}!adivinarLetra@{adivinarLetra}}
+\index{adivinarLetra@{adivinarLetra}!ahorcado.cpp@{ahorcado.cpp}}
+\doxysubsubsection{\texorpdfstring{adivinarLetra()}{adivinarLetra()}}
+{\footnotesize\ttfamily void adivinar\+Letra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&}]{juego,  }\item[{char}]{letra }\end{DoxyParamCaption})}
+
+
+
+Adivinar\+Letra El usuario adivina o no la palabra. 
+
+\mbox{\Hypertarget{ahorcado_8cpp_a9e7bb86143a16249f65b208000d709bf}\label{ahorcado_8cpp_a9e7bb86143a16249f65b208000d709bf}} 
+\index{ahorcado.cpp@{ahorcado.cpp}!inicializar@{inicializar}}
+\index{inicializar@{inicializar}!ahorcado.cpp@{ahorcado.cpp}}
+\doxysubsubsection{\texorpdfstring{inicializar()}{inicializar()}}
+{\footnotesize\ttfamily void inicializar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&}]{juego,  }\item[{const std\+::string}]{palabras\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Palabras,  }\item[{int}]{intento\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+inicializar Se inicializa el programa 
+
+\mbox{\Hypertarget{ahorcado_8cpp_a7da5ae4c130c92c4cbff8b6c2f5e84ec}\label{ahorcado_8cpp_a7da5ae4c130c92c4cbff8b6c2f5e84ec}} 
+\index{ahorcado.cpp@{ahorcado.cpp}!jugarJuego@{jugarJuego}}
+\index{jugarJuego@{jugarJuego}!ahorcado.cpp@{ahorcado.cpp}}
+\doxysubsubsection{\texorpdfstring{jugarJuego()}{jugarJuego()}}
+{\footnotesize\ttfamily void jugar\+Juego (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&}]{juego }\end{DoxyParamCaption})}
+
+
+
+jugar\+Juego Funcion para jugarlo 
+
+\mbox{\Hypertarget{ahorcado_8cpp_aa65a0f98f8c33b993dc267dcb33c89ef}\label{ahorcado_8cpp_aa65a0f98f8c33b993dc267dcb33c89ef}} 
+\index{ahorcado.cpp@{ahorcado.cpp}!menu@{menu}}
+\index{menu@{menu}!ahorcado.cpp@{ahorcado.cpp}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&}]{juego,  }\item[{int \&}]{intentos\+\_\+maximos,  }\item[{string}]{palabras\mbox{[}$\,$\mbox{]},  }\item[{int \&}]{num\+Palabras }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ahorcado_8cpp_ac0aca0f34a52fbe7527a03517bc3347e}\label{ahorcado_8cpp_ac0aca0f34a52fbe7527a03517bc3347e}} 
+\index{ahorcado.cpp@{ahorcado.cpp}!mostrarMenu@{mostrarMenu}}
+\index{mostrarMenu@{mostrarMenu}!ahorcado.cpp@{ahorcado.cpp}}
+\doxysubsubsection{\texorpdfstring{mostrarMenu()}{mostrarMenu()}}
+{\footnotesize\ttfamily void mostrar\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+mostrar\+Menu Muentra el menu en pantalla 
+
+\mbox{\Hypertarget{ahorcado_8cpp_a7db7c76db6249b9f33c9cff2e4018814}\label{ahorcado_8cpp_a7db7c76db6249b9f33c9cff2e4018814}} 
+\index{ahorcado.cpp@{ahorcado.cpp}!verificarAdivinanza@{verificarAdivinanza}}
+\index{verificarAdivinanza@{verificarAdivinanza}!ahorcado.cpp@{ahorcado.cpp}}
+\doxysubsubsection{\texorpdfstring{verificarAdivinanza()}{verificarAdivinanza()}}
+{\footnotesize\ttfamily bool verificar\+Adivinanza (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ahorcado}{Ahorcado}} \&}]{juego }\end{DoxyParamCaption})}
+
+
+
+verificar\+Adivinanza 
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{ahorcado_8cpp_acccf29e4a5b0a81cb961e801765209d3}\label{ahorcado_8cpp_acccf29e4a5b0a81cb961e801765209d3}} 
+\index{ahorcado.cpp@{ahorcado.cpp}!nuevaPalabra@{nuevaPalabra}}
+\index{nuevaPalabra@{nuevaPalabra}!ahorcado.cpp@{ahorcado.cpp}}
+\doxysubsubsection{\texorpdfstring{nuevaPalabra}{nuevaPalabra}}
+{\footnotesize\ttfamily string nueva\+Palabra}
+
