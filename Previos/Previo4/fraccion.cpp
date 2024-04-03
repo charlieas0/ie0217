@@ -16,7 +16,7 @@ class Fraccion {
         cout << numerador << "/" << denominador << endl;
     }
 };
-
+// Generando una sobrecarga de operadores 
 int main(){
     Fraccion f1(1, 2);
     Fraccion f2(3, 4);
