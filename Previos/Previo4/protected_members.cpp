@@ -33,7 +33,7 @@ class Dog : public Animal {
         void bark(){ cout << "I can bark! woof woof!!" << endl;}
 };
 
-
+// Mienbros protegidos.
 int main(){
     Dog dog1;
     dog1.run();
