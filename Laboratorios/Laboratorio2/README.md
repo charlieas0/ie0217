@@ -6,6 +6,8 @@ g++ main.cpp Empleado.cpp EmpleadoAsalariado.cpp EmpleadoPorHoras.cpp -o main.ex
 // Ejecutarlo en la terminal.
 ./main.exe
 ```
+
+
 ## Los 4 pilares de OOP.
 
 Encapsulación: La encapsulación se refiere a la capacidad de una clase para ocultar sus datos internos y proporcionar una interfaz bien definida para
