@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Planeta: Fichero Fuente PaisEnDesarrollo.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Planeta
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Manejo de Clases</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PaisEnDesarrollo.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_pais_en_desarrollo_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PAISENDESARROLLO_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PAISENDESARROLLO_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pais_8hpp.html">Pais.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_pais_en_desarrollo.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pais_en_desarrollo.html">PaisEnDesarrollo</a> : <span class="keyword">public</span> <a class="code" href="class_pais.html">Pais</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">bool</span> tecnologia5G; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::string nombre; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_pais_en_desarrollo.html#acd524690cb238a2e05208fe14df75247">PaisEnDesarrollo</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> pop, <span class="keywordtype">bool</span> tiene5G, std::string nomb);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pais_en_desarrollo.html#afd52f60aaa9fbba263bf0b29f8ef4855">generarPIB</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string <a class="code" href="class_pais_en_desarrollo.html#a3ce7cdeb6d39deb2397e88b1539edf7a">getNombre</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_pais_en_desarrollo.html#a6b93765f2a2580f8d349b9792bcdce2e">esPrimerMundo</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_pais_en_desarrollo.html#afa4968e3961772eadc93686053707073">tieneTecnologia5G</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_pais_en_desarrollo.html#ad7ef8ade499d72a214282030804d1dcf">tieneCentroInvestigacion</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_pais_en_desarrollo.html#af7ff63fe590ff17da91ef1014a1a7399">getPIB</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="ttc" id="a_pais_8hpp_html"><div class="ttname"><a href="_pais_8hpp.html">Pais.hpp</a></div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html"><div class="ttname"><a href="class_pais_en_desarrollo.html">PaisEnDesarrollo</a></div><div class="ttdoc">Clase que representa un país en desarrollo.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.hpp:9</div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html_a3ce7cdeb6d39deb2397e88b1539edf7a"><div class="ttname"><a href="class_pais_en_desarrollo.html#a3ce7cdeb6d39deb2397e88b1539edf7a">PaisEnDesarrollo::getNombre</a></div><div class="ttdeci">std::string getNombre() const override</div><div class="ttdoc">Método para obtener el nombre del país en desarrollo.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.cpp:21</div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html_a6b93765f2a2580f8d349b9792bcdce2e"><div class="ttname"><a href="class_pais_en_desarrollo.html#a6b93765f2a2580f8d349b9792bcdce2e">PaisEnDesarrollo::esPrimerMundo</a></div><div class="ttdeci">bool esPrimerMundo() const override</div><div class="ttdoc">Método para determinar si el país en desarrollo es de primer mundo.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.cpp:26</div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html_acd524690cb238a2e05208fe14df75247"><div class="ttname"><a href="class_pais_en_desarrollo.html#acd524690cb238a2e05208fe14df75247">PaisEnDesarrollo::PaisEnDesarrollo</a></div><div class="ttdeci">PaisEnDesarrollo(int id, int pop, bool tiene5G, std::string nomb)</div><div class="ttdoc">Constructor de la clase PaisEnDesarrollo.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.cpp:8</div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html_ad7ef8ade499d72a214282030804d1dcf"><div class="ttname"><a href="class_pais_en_desarrollo.html#ad7ef8ade499d72a214282030804d1dcf">PaisEnDesarrollo::tieneCentroInvestigacion</a></div><div class="ttdeci">bool tieneCentroInvestigacion() const override</div><div class="ttdoc">Método para determinar si el país en desarrollo tiene centro de investigación.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.cpp:38</div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html_af7ff63fe590ff17da91ef1014a1a7399"><div class="ttname"><a href="class_pais_en_desarrollo.html#af7ff63fe590ff17da91ef1014a1a7399">PaisEnDesarrollo::getPIB</a></div><div class="ttdeci">int getPIB() const override</div><div class="ttdoc">Método para obtener el PIB del país en desarrollo.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.cpp:43</div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html_afa4968e3961772eadc93686053707073"><div class="ttname"><a href="class_pais_en_desarrollo.html#afa4968e3961772eadc93686053707073">PaisEnDesarrollo::tieneTecnologia5G</a></div><div class="ttdeci">bool tieneTecnologia5G() const override</div><div class="ttdoc">Método para determinar si el país en desarrollo tiene tecnología 5G.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.cpp:32</div></div>
+<div class="ttc" id="aclass_pais_en_desarrollo_html_afd52f60aaa9fbba263bf0b29f8ef4855"><div class="ttname"><a href="class_pais_en_desarrollo.html#afd52f60aaa9fbba263bf0b29f8ef4855">PaisEnDesarrollo::generarPIB</a></div><div class="ttdeci">void generarPIB() override</div><div class="ttdoc">Método para generar el PIB del país en desarrollo.</div><div class="ttdef"><b>Definition:</b> PaisEnDesarrollo.cpp:13</div></div>
+<div class="ttc" id="aclass_pais_html"><div class="ttname"><a href="class_pais.html">Pais</a></div><div class="ttdoc">Clase base que representa un país.</div><div class="ttdef"><b>Definition:</b> Pais.hpp:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

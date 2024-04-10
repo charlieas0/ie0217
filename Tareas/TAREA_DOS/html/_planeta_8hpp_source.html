@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Planeta: Fichero Fuente Planeta.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Planeta
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Manejo de Clases</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Planeta.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_planeta_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLANETA_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PLANETA_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_continente_8hpp.html">Continente.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_planeta.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_planeta.html">Planeta</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::vector&lt;Continente&gt; continentes; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::vector&lt;std::string&gt; continentesConAeropuerto; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_planeta.html#a549c2bacedbd11b1b2c1332c4a59f355">   17</a></span>&#160;    std::vector&lt;Pais*&gt; <a class="code" href="class_planeta.html#a549c2bacedbd11b1b2c1332c4a59f355">paises</a>; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#af4d735cbbeafb1d63231655919712d84">agregarContinente</a>(<span class="keyword">const</span> std::string&amp; nombre);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#aa3ccc87bed4bef98e2c8061fb68e5edd">agregarPais</a>(<span class="keyword">const</span> std::string&amp; continente, <a class="code" href="class_pais.html">Pais</a>* pais);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#a57c35bb3e164441453b5c894c67f9376">agregarContinenteConAeropuerto</a>(<span class="keyword">const</span> std::string&amp; continente);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#a82d6ee7115b7aadf82483dc8a37531ce">imprimirInformacion</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#a57fb9bca31605e76ad8417c2721236a1">compararPaises</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#a3a18daed486407da809bd64bdf04678b">agregarNuevoPais</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#a268a5b4920395dd8db8cbba0af55cec3">agregarPaisAlContinente</a>(<a class="code" href="class_pais.html">Pais</a>* pais);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_planeta.html#a91d3d45e9bf8c01ce7e27b9b521f763c">eliminarPais</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PLANETA_HPP</span></div>
+<div class="ttc" id="a_continente_8hpp_html"><div class="ttname"><a href="_continente_8hpp.html">Continente.hpp</a></div></div>
+<div class="ttc" id="aclass_pais_html"><div class="ttname"><a href="class_pais.html">Pais</a></div><div class="ttdoc">Clase base que representa un país.</div><div class="ttdef"><b>Definition:</b> Pais.hpp:9</div></div>
+<div class="ttc" id="aclass_planeta_html"><div class="ttname"><a href="class_planeta.html">Planeta</a></div><div class="ttdoc">Clase que representa un planeta con sus continentes y países.</div><div class="ttdef"><b>Definition:</b> Planeta.hpp:11</div></div>
+<div class="ttc" id="aclass_planeta_html_a268a5b4920395dd8db8cbba0af55cec3"><div class="ttname"><a href="class_planeta.html#a268a5b4920395dd8db8cbba0af55cec3">Planeta::agregarPaisAlContinente</a></div><div class="ttdeci">void agregarPaisAlContinente(Pais *pais)</div><div class="ttdoc">Método para agregar un país a un continente específico.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:146</div></div>
+<div class="ttc" id="aclass_planeta_html_a3a18daed486407da809bd64bdf04678b"><div class="ttname"><a href="class_planeta.html#a3a18daed486407da809bd64bdf04678b">Planeta::agregarNuevoPais</a></div><div class="ttdeci">void agregarNuevoPais()</div><div class="ttdoc">Método para agregar un nuevo país al planeta.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:114</div></div>
+<div class="ttc" id="aclass_planeta_html_a549c2bacedbd11b1b2c1332c4a59f355"><div class="ttname"><a href="class_planeta.html#a549c2bacedbd11b1b2c1332c4a59f355">Planeta::paises</a></div><div class="ttdeci">std::vector&lt; Pais * &gt; paises</div><div class="ttdef"><b>Definition:</b> Planeta.hpp:17</div></div>
+<div class="ttc" id="aclass_planeta_html_a57c35bb3e164441453b5c894c67f9376"><div class="ttname"><a href="class_planeta.html#a57c35bb3e164441453b5c894c67f9376">Planeta::agregarContinenteConAeropuerto</a></div><div class="ttdeci">void agregarContinenteConAeropuerto(const std::string &amp;continente)</div><div class="ttdoc">Método para agregar un continente con aeropuerto.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:28</div></div>
+<div class="ttc" id="aclass_planeta_html_a57fb9bca31605e76ad8417c2721236a1"><div class="ttname"><a href="class_planeta.html#a57fb9bca31605e76ad8417c2721236a1">Planeta::compararPaises</a></div><div class="ttdeci">void compararPaises() const</div><div class="ttdoc">Método para comparar dos países.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:60</div></div>
+<div class="ttc" id="aclass_planeta_html_a82d6ee7115b7aadf82483dc8a37531ce"><div class="ttname"><a href="class_planeta.html#a82d6ee7115b7aadf82483dc8a37531ce">Planeta::imprimirInformacion</a></div><div class="ttdeci">void imprimirInformacion() const</div><div class="ttdoc">Método para imprimir información sobre el planeta y sus países.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:34</div></div>
+<div class="ttc" id="aclass_planeta_html_a91d3d45e9bf8c01ce7e27b9b521f763c"><div class="ttname"><a href="class_planeta.html#a91d3d45e9bf8c01ce7e27b9b521f763c">Planeta::eliminarPais</a></div><div class="ttdeci">void eliminarPais()</div><div class="ttdoc">Método para eliminar un país del planeta.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:171</div></div>
+<div class="ttc" id="aclass_planeta_html_aa3ccc87bed4bef98e2c8061fb68e5edd"><div class="ttname"><a href="class_planeta.html#aa3ccc87bed4bef98e2c8061fb68e5edd">Planeta::agregarPais</a></div><div class="ttdeci">void agregarPais(const std::string &amp;continente, Pais *pais)</div><div class="ttdoc">Método para agregar un país a un continente específico.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:17</div></div>
+<div class="ttc" id="aclass_planeta_html_af4d735cbbeafb1d63231655919712d84"><div class="ttname"><a href="class_planeta.html#af4d735cbbeafb1d63231655919712d84">Planeta::agregarContinente</a></div><div class="ttdeci">void agregarContinente(const std::string &amp;nombre)</div><div class="ttdoc">Método para agregar un continente al planeta.</div><div class="ttdef"><b>Definition:</b> Planeta.cpp:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
