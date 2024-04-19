@@ -1,14 +1,15 @@
 # ie0217
-## Tarea2
+## Tarea3
 
 ## Parte práctica.
 Puede ejecutar el codigo de la siguiente manera en terminal:
 
 ```
-g++ Continente.cpp main.cpp Pais.cpp PaisEnDesarrollo.cpp PaisPrimerMundo.cpp Planeta.cpp -o paises.txt
+g++ hash_table.cpp main.cpp lista_enlazada.cpp -o contactos.txt
+
+// Ejecutable:
+./contactos.txt
 ```
-Ejecutable:
-```./paises.txt```
 
 
 ## Parte teórica.
