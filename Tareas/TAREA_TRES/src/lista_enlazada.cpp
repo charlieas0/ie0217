@@ -64,7 +64,7 @@ void ListaEnlazada::imprimirLista() {
 }
 
 void ListaEnlazada::ordenarContactos() {
-    // Paso 1: Obtener todos los contactos de la lista enlazada
+
 
     // Declarando un vector para almacenar los contactos
     vector<Contacto> contactos;
