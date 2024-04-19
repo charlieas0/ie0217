@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Agenda de contactos: Fichero Fuente hash_table.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Agenda de contactos
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Manejo de memoria dinámica</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">hash_table.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="hash__table_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HASH_TABLE_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HASH_TABLE_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista__enlazada_8hpp.html">lista_enlazada.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_hash_table.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hash_table.html">HashTable</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::unordered_map&lt;std::string, Nodo*&gt; tableNombre; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::unordered_map&lt;std::string, Nodo*&gt; tableTelefono; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_hash_table.html#a8c7432aabf65a305fcc3e9e380aa332c">agregar</a>(<a class="code" href="struct_contacto.html">Contacto</a> contacto);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_hash_table.html#a78b3aa273205863cf47befb7b99c31cb">eliminarContacto</a>(std::string nombre);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_hash_table.html#a58d097fa42f409970e45ccf182c0bbba">imprimirHashTable</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_hash_table_html"><div class="ttname"><a href="class_hash_table.html">HashTable</a></div><div class="ttdoc">Clase que representa una tabla hash para almacenar contactos.</div><div class="ttdef"><b>Definition:</b> hash_table.hpp:13</div></div>
+<div class="ttc" id="aclass_hash_table_html_a58d097fa42f409970e45ccf182c0bbba"><div class="ttname"><a href="class_hash_table.html#a58d097fa42f409970e45ccf182c0bbba">HashTable::imprimirHashTable</a></div><div class="ttdeci">void imprimirHashTable()</div><div class="ttdoc">Imprime el contenido de la tabla hash.</div><div class="ttdef"><b>Definition:</b> hash_table.cpp:24</div></div>
+<div class="ttc" id="aclass_hash_table_html_a78b3aa273205863cf47befb7b99c31cb"><div class="ttname"><a href="class_hash_table.html#a78b3aa273205863cf47befb7b99c31cb">HashTable::eliminarContacto</a></div><div class="ttdeci">void eliminarContacto(std::string nombre)</div><div class="ttdoc">Elimina un contacto de la tabla hash por su nombre.</div><div class="ttdef"><b>Definition:</b> hash_table.cpp:16</div></div>
+<div class="ttc" id="aclass_hash_table_html_a8c7432aabf65a305fcc3e9e380aa332c"><div class="ttname"><a href="class_hash_table.html#a8c7432aabf65a305fcc3e9e380aa332c">HashTable::agregar</a></div><div class="ttdeci">void agregar(Contacto contacto)</div><div class="ttdoc">Agrega un contacto a la tabla hash.</div><div class="ttdef"><b>Definition:</b> hash_table.cpp:4</div></div>
+<div class="ttc" id="alista__enlazada_8hpp_html"><div class="ttname"><a href="lista__enlazada_8hpp.html">lista_enlazada.hpp</a></div></div>
+<div class="ttc" id="astruct_contacto_html"><div class="ttname"><a href="struct_contacto.html">Contacto</a></div><div class="ttdoc">Estructura para representar un contacto.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

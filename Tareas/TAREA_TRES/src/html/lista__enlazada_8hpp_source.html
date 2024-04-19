@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Agenda de contactos: Fichero Fuente lista_enlazada.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Agenda de contactos
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Manejo de memoria dinámica</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lista_enlazada.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lista__enlazada_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LISTA_ENLAZADA_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LISTA_ENLAZADA_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_contacto.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_contacto.html">Contacto</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_contacto.html#acf3f3b5d543fa4bc40d2d75ce1374a72">   11</a></span>&#160;    std::string <a class="code" href="struct_contacto.html#acf3f3b5d543fa4bc40d2d75ce1374a72">nombre</a>; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_contacto.html#a3c89bce0eea800dfa534dc167b9ac588">   12</a></span>&#160;    std::string <a class="code" href="struct_contacto.html#a3c89bce0eea800dfa534dc167b9ac588">telefono</a>; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_nodo.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodo.html">Nodo</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_nodo.html#a13b3dbfba0414417486a62ec9ed73f3f">   19</a></span>&#160;    <a class="code" href="struct_contacto.html">Contacto</a> <a class="code" href="struct_nodo.html#a13b3dbfba0414417486a62ec9ed73f3f">contacto</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_nodo.html#a95d0647f3b261e8633fbcb626a0ee952">   20</a></span>&#160;    <a class="code" href="struct_nodo.html">Nodo</a>* <a class="code" href="struct_nodo.html#a95d0647f3b261e8633fbcb626a0ee952">siguiente</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_lista_enlazada.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_lista_enlazada.html">ListaEnlazada</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="struct_nodo.html">Nodo</a>* primero_lista; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_lista_enlazada.html#ae82643ddd50a2ffb28f0903d586ae3c2">ListaEnlazada</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_lista_enlazada.html#abdfc519077b74e9b7bafbca5d7538a5a">agregarContacto</a>(<a class="code" href="struct_contacto.html">Contacto</a> contacto);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_lista_enlazada.html#a1aba05f2719ac0ff0b21ab9bf7c3766d">eliminarContacto</a>(std::string nombre);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_lista_enlazada.html#aca2c39c4adc9fe5904e186bc0afaef9e">imprimirLista</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_lista_enlazada.html#a26e374a4dc82fbaf079499b5e0db1856">ordenarContactos</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_lista_enlazada_html"><div class="ttname"><a href="class_lista_enlazada.html">ListaEnlazada</a></div><div class="ttdoc">Clase que representa una lista enlazada de contactos.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:26</div></div>
+<div class="ttc" id="aclass_lista_enlazada_html_a1aba05f2719ac0ff0b21ab9bf7c3766d"><div class="ttname"><a href="class_lista_enlazada.html#a1aba05f2719ac0ff0b21ab9bf7c3766d">ListaEnlazada::eliminarContacto</a></div><div class="ttdeci">void eliminarContacto(std::string nombre)</div><div class="ttdoc">Elimina un contacto de la lista.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.cpp:32</div></div>
+<div class="ttc" id="aclass_lista_enlazada_html_a26e374a4dc82fbaf079499b5e0db1856"><div class="ttname"><a href="class_lista_enlazada.html#a26e374a4dc82fbaf079499b5e0db1856">ListaEnlazada::ordenarContactos</a></div><div class="ttdeci">void ordenarContactos()</div><div class="ttdoc">Ordena los contactos de la lista por orden alfabético.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.cpp:66</div></div>
+<div class="ttc" id="aclass_lista_enlazada_html_abdfc519077b74e9b7bafbca5d7538a5a"><div class="ttname"><a href="class_lista_enlazada.html#abdfc519077b74e9b7bafbca5d7538a5a">ListaEnlazada::agregarContacto</a></div><div class="ttdeci">void agregarContacto(Contacto contacto)</div><div class="ttdoc">Agrega un nuevo contacto a la lista.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.cpp:8</div></div>
+<div class="ttc" id="aclass_lista_enlazada_html_aca2c39c4adc9fe5904e186bc0afaef9e"><div class="ttname"><a href="class_lista_enlazada.html#aca2c39c4adc9fe5904e186bc0afaef9e">ListaEnlazada::imprimirLista</a></div><div class="ttdeci">void imprimirLista()</div><div class="ttdoc">Imprime todos los contactos de la lista.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.cpp:55</div></div>
+<div class="ttc" id="aclass_lista_enlazada_html_ae82643ddd50a2ffb28f0903d586ae3c2"><div class="ttname"><a href="class_lista_enlazada.html#ae82643ddd50a2ffb28f0903d586ae3c2">ListaEnlazada::ListaEnlazada</a></div><div class="ttdeci">ListaEnlazada()</div><div class="ttdoc">Constructor de la clase ListaEnlazada.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.cpp:6</div></div>
+<div class="ttc" id="astruct_contacto_html"><div class="ttname"><a href="struct_contacto.html">Contacto</a></div><div class="ttdoc">Estructura para representar un contacto.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:10</div></div>
+<div class="ttc" id="astruct_contacto_html_a3c89bce0eea800dfa534dc167b9ac588"><div class="ttname"><a href="struct_contacto.html#a3c89bce0eea800dfa534dc167b9ac588">Contacto::telefono</a></div><div class="ttdeci">std::string telefono</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:12</div></div>
+<div class="ttc" id="astruct_contacto_html_acf3f3b5d543fa4bc40d2d75ce1374a72"><div class="ttname"><a href="struct_contacto.html#acf3f3b5d543fa4bc40d2d75ce1374a72">Contacto::nombre</a></div><div class="ttdeci">std::string nombre</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:11</div></div>
+<div class="ttc" id="astruct_nodo_html"><div class="ttname"><a href="struct_nodo.html">Nodo</a></div><div class="ttdoc">Estructura para representar un nodo de la lista enlazada.</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:18</div></div>
+<div class="ttc" id="astruct_nodo_html_a13b3dbfba0414417486a62ec9ed73f3f"><div class="ttname"><a href="struct_nodo.html#a13b3dbfba0414417486a62ec9ed73f3f">Nodo::contacto</a></div><div class="ttdeci">Contacto contacto</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:19</div></div>
+<div class="ttc" id="astruct_nodo_html_a95d0647f3b261e8633fbcb626a0ee952"><div class="ttname"><a href="struct_nodo.html#a95d0647f3b261e8633fbcb626a0ee952">Nodo::siguiente</a></div><div class="ttdeci">Nodo * siguiente</div><div class="ttdef"><b>Definition:</b> lista_enlazada.hpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
