@@ -11,7 +11,7 @@ public:
     int anioPublicacion;
 
     // Constructor de la clase Libro
-    Libro(std::string t, std::string a, int anio);
+    Libro(string t, string a, int anio);
     
     // Sobrecarga del operador de comparación "<" para comparar libros por año de publicación
     bool operator<(const Libro& l) const;
