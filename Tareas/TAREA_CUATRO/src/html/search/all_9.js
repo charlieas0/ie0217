@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['validadordeentrada_24',['ValidadorDeEntrada',['../class_validador_de_entrada.html',1,'']]],
+  ['validardimensiones_25',['validarDimensiones',['../class_validador_de_entrada.html#ae6904cfe58b3a29c7bcdd017f444fc0c',1,'ValidadorDeEntrada::validarDimensiones(int tamano)'],['../class_validador_de_entrada.html#ae6904cfe58b3a29c7bcdd017f444fc0c',1,'ValidadorDeEntrada::validarDimensiones(int tamano)']]],
+  ['validarmultiplicacion_26',['validarMultiplicacion',['../class_operaciones_basicas.html#acc4a2ef9672deec1f9bb55a875b6c0b5',1,'OperacionesBasicas::validarMultiplicacion(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)'],['../class_operaciones_basicas.html#acc4a2ef9672deec1f9bb55a875b6c0b5',1,'OperacionesBasicas::validarMultiplicacion(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)']]],
+  ['validarsumaresta_27',['validarSumaResta',['../class_operaciones_basicas.html#a48529d410087eecb8cf9e6fb828c303e',1,'OperacionesBasicas::validarSumaResta(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)'],['../class_operaciones_basicas.html#a48529d410087eecb8cf9e6fb828c303e',1,'OperacionesBasicas::validarSumaResta(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)']]],
+  ['validartipodato_28',['validarTipoDato',['../class_validador_de_entrada.html#af10b736c8c8808a6eb1163d3fd6517f8',1,'ValidadorDeEntrada::validarTipoDato(const std::string &amp;input)'],['../class_validador_de_entrada.html#af10b736c8c8808a6eb1163d3fd6517f8',1,'ValidadorDeEntrada::validarTipoDato(const std::string &amp;input)']]]
+];

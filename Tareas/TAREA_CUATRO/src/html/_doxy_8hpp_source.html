@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculadora de matrices: Fichero Fuente Doxy.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Calculadora de matrices
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Manejo de STL, Excepciones, Tamplate</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Doxy.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_doxy_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CLASS_MATRIZ_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CLASS_MATRIZ_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;regex&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_matriz.html">Matriz</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_matriz.html#af109cc88324f523d85e3c6d81a658cb9">filas</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_matriz.html#ae9a49bedad2412afe10aba1159ed719d">columnas</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;std::vector&lt;T&gt;&gt; <a class="code" href="class_matriz.html#a184247834f7b30383fcca5db3378a9fc">datos</a>; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_matriz.html#aaf573ec9eee84e31ac7b433ba4c1f6f6">   30</a></span>&#160;    <a class="code" href="class_matriz.html#aaf573ec9eee84e31ac7b433ba4c1f6f6">Matriz</a>(<span class="keywordtype">int</span> <a class="code" href="class_matriz.html#af109cc88324f523d85e3c6d81a658cb9">filas</a>, <span class="keywordtype">int</span> <a class="code" href="class_matriz.html#ae9a49bedad2412afe10aba1159ed719d">columnas</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_matriz.html#aa1f93719088c45ebbc20e0fb6df415d8">   35</a></span>&#160;    <a class="code" href="class_matriz.html#aa1f93719088c45ebbc20e0fb6df415d8">~Matriz</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_matriz.html#a0303f418b2af0c790afa96f0e551b7af">   40</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_matriz.html#a0303f418b2af0c790afa96f0e551b7af">mostrarMatriz</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_matriz.html#a74fa26c973781e58e00a9310b1f2e14d">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_matriz.html#a74fa26c973781e58e00a9310b1f2e14d">setDimensiones</a>(<span class="keywordtype">int</span> <a class="code" href="class_matriz.html#af109cc88324f523d85e3c6d81a658cb9">filas</a>, <span class="keywordtype">int</span> <a class="code" href="class_matriz.html#ae9a49bedad2412afe10aba1159ed719d">columnas</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_matriz.html#a98b9f704c074788ff6001066f45f7aec">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_matriz.html#a98b9f704c074788ff6001066f45f7aec">llenarMatriz</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_matriz.html#a7cec03dd5c6f31730a4b0b8a096bd1de">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_matriz.html#a7cec03dd5c6f31730a4b0b8a096bd1de">setValor</a>(<span class="keywordtype">int</span> fila, <span class="keywordtype">int</span> columna, T valor);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_matriz.html#aec0dbbec64397e24f4d3ca914e6563e3">   69</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_matriz.html#aec0dbbec64397e24f4d3ca914e6563e3">getFilas</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_matriz.html#a6a79899e6830b0511445cec0defb0317">   76</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_matriz.html#a6a79899e6830b0511445cec0defb0317">getColumnas</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_matriz.html#a7253283e48f6d0726368289286b882f9">   84</a></span>&#160;    <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a> <a class="code" href="class_matriz.html#a7253283e48f6d0726368289286b882f9">operator+</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; otra) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_matriz.html#a79e39e6851b26ccb1374c4f9442fac2c">   92</a></span>&#160;    <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a> <a class="code" href="class_matriz.html#a79e39e6851b26ccb1374c4f9442fac2c">operator-</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; otra) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_matriz.html#a69c22be89306003b68651591381f3af5">  100</a></span>&#160;    <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a> <a class="code" href="class_matriz.html#a69c22be89306003b68651591381f3af5">operator*</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; otra) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">class </span><a class="code" href="class_operaciones_basicas.html">OperacionesBasicas</a> {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_operaciones_basicas.html#a48529d410087eecb8cf9e6fb828c303e">  117</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_operaciones_basicas.html#a48529d410087eecb8cf9e6fb828c303e">validarSumaResta</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; b);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_operaciones_basicas.html#acc4a2ef9672deec1f9bb55a875b6c0b5">  125</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_operaciones_basicas.html#acc4a2ef9672deec1f9bb55a875b6c0b5">validarMultiplicacion</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; b);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_operaciones_basicas.html#a94effc2bb073ff6d8fc96dc741a9113b">  134</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a> <a class="code" href="class_operaciones_basicas.html#a94effc2bb073ff6d8fc96dc741a9113b">suma</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; b);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_operaciones_basicas.html#a7b418d7224f6431fdfd810c263bb1c49">  143</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a> <a class="code" href="class_operaciones_basicas.html#a7b418d7224f6431fdfd810c263bb1c49">resta</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; b);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_operaciones_basicas.html#a126db4b5c3367dd48684590c954dd2af">  152</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a> <a class="code" href="class_operaciones_basicas.html#a126db4b5c3367dd48684590c954dd2af">multiplicacion</a>(<span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="class_matriz.html">Matriz&lt;T&gt;</a>&amp; b);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">class </span><a class="code" href="class_validador_de_entrada.html">ValidadorDeEntrada</a> {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="class_validador_de_entrada.html#af10b736c8c8808a6eb1163d3fd6517f8">  165</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_validador_de_entrada.html#af10b736c8c8808a6eb1163d3fd6517f8">validarTipoDato</a>(<span class="keyword">const</span> std::string&amp; input);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_validador_de_entrada.html#ae6904cfe58b3a29c7bcdd017f444fc0c">  172</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_validador_de_entrada.html#ae6904cfe58b3a29c7bcdd017f444fc0c">validarDimensiones</a>(<span class="keywordtype">int</span> tamano);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;};</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="ttc" id="aclass_matriz_html"><div class="ttname"><a href="class_matriz.html">Matriz</a></div><div class="ttdoc">Clase plantilla para representar una matriz.</div><div class="ttdef"><b>Definition:</b> Class_matriz.hpp:12</div></div>
+<div class="ttc" id="aclass_matriz_html_a0303f418b2af0c790afa96f0e551b7af"><div class="ttname"><a href="class_matriz.html#a0303f418b2af0c790afa96f0e551b7af">Matriz::mostrarMatriz</a></div><div class="ttdeci">void mostrarMatriz() const</div><div class="ttdoc">Muestra la matriz en la consola.</div></div>
+<div class="ttc" id="aclass_matriz_html_a184247834f7b30383fcca5db3378a9fc"><div class="ttname"><a href="class_matriz.html#a184247834f7b30383fcca5db3378a9fc">Matriz::datos</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; datos</div><div class="ttdef"><b>Definition:</b> Class_matriz.hpp:16</div></div>
+<div class="ttc" id="aclass_matriz_html_a69c22be89306003b68651591381f3af5"><div class="ttname"><a href="class_matriz.html#a69c22be89306003b68651591381f3af5">Matriz::operator*</a></div><div class="ttdeci">Matriz&lt; T &gt; operator*(const Matriz&lt; T &gt; &amp;otra) const</div><div class="ttdoc">Sobrecarga del operador de multiplicación para matrices.</div></div>
+<div class="ttc" id="aclass_matriz_html_a6a79899e6830b0511445cec0defb0317"><div class="ttname"><a href="class_matriz.html#a6a79899e6830b0511445cec0defb0317">Matriz::getColumnas</a></div><div class="ttdeci">int getColumnas() const</div><div class="ttdoc">Obtiene el número de columnas de la matriz.</div></div>
+<div class="ttc" id="aclass_matriz_html_a7253283e48f6d0726368289286b882f9"><div class="ttname"><a href="class_matriz.html#a7253283e48f6d0726368289286b882f9">Matriz::operator+</a></div><div class="ttdeci">Matriz&lt; T &gt; operator+(const Matriz&lt; T &gt; &amp;otra) const</div><div class="ttdoc">Sobrecarga del operador de suma para matrices.</div></div>
+<div class="ttc" id="aclass_matriz_html_a74fa26c973781e58e00a9310b1f2e14d"><div class="ttname"><a href="class_matriz.html#a74fa26c973781e58e00a9310b1f2e14d">Matriz::setDimensiones</a></div><div class="ttdeci">void setDimensiones(int filas, int columnas)</div><div class="ttdoc">Establece las dimensiones de la matriz.</div></div>
+<div class="ttc" id="aclass_matriz_html_a79e39e6851b26ccb1374c4f9442fac2c"><div class="ttname"><a href="class_matriz.html#a79e39e6851b26ccb1374c4f9442fac2c">Matriz::operator-</a></div><div class="ttdeci">Matriz&lt; T &gt; operator-(const Matriz&lt; T &gt; &amp;otra) const</div><div class="ttdoc">Sobrecarga del operador de resta para matrices.</div></div>
+<div class="ttc" id="aclass_matriz_html_a7cec03dd5c6f31730a4b0b8a096bd1de"><div class="ttname"><a href="class_matriz.html#a7cec03dd5c6f31730a4b0b8a096bd1de">Matriz::setValor</a></div><div class="ttdeci">void setValor(int fila, int columna, T valor)</div><div class="ttdoc">Establece el valor de un elemento en una posición específica de la matriz.</div></div>
+<div class="ttc" id="aclass_matriz_html_a98b9f704c074788ff6001066f45f7aec"><div class="ttname"><a href="class_matriz.html#a98b9f704c074788ff6001066f45f7aec">Matriz::llenarMatriz</a></div><div class="ttdeci">void llenarMatriz()</div><div class="ttdoc">Llena la matriz con valores ingresados por el usuario.</div></div>
+<div class="ttc" id="aclass_matriz_html_aa1f93719088c45ebbc20e0fb6df415d8"><div class="ttname"><a href="class_matriz.html#aa1f93719088c45ebbc20e0fb6df415d8">Matriz::~Matriz</a></div><div class="ttdeci">~Matriz()</div><div class="ttdoc">Destructor de la clase Matriz.</div></div>
+<div class="ttc" id="aclass_matriz_html_aaf573ec9eee84e31ac7b433ba4c1f6f6"><div class="ttname"><a href="class_matriz.html#aaf573ec9eee84e31ac7b433ba4c1f6f6">Matriz::Matriz</a></div><div class="ttdeci">Matriz(int filas, int columnas)</div><div class="ttdoc">Constructor de la clase Matriz.</div></div>
+<div class="ttc" id="aclass_matriz_html_ae9a49bedad2412afe10aba1159ed719d"><div class="ttname"><a href="class_matriz.html#ae9a49bedad2412afe10aba1159ed719d">Matriz::columnas</a></div><div class="ttdeci">int columnas</div><div class="ttdef"><b>Definition:</b> Class_matriz.hpp:15</div></div>
+<div class="ttc" id="aclass_matriz_html_aec0dbbec64397e24f4d3ca914e6563e3"><div class="ttname"><a href="class_matriz.html#aec0dbbec64397e24f4d3ca914e6563e3">Matriz::getFilas</a></div><div class="ttdeci">int getFilas() const</div><div class="ttdoc">Obtiene el número de filas de la matriz.</div></div>
+<div class="ttc" id="aclass_matriz_html_af109cc88324f523d85e3c6d81a658cb9"><div class="ttname"><a href="class_matriz.html#af109cc88324f523d85e3c6d81a658cb9">Matriz::filas</a></div><div class="ttdeci">int filas</div><div class="ttdef"><b>Definition:</b> Class_matriz.hpp:14</div></div>
+<div class="ttc" id="aclass_operaciones_basicas_html"><div class="ttname"><a href="class_operaciones_basicas.html">OperacionesBasicas</a></div><div class="ttdoc">Clase para realizar operaciones básicas con matrices.</div><div class="ttdef"><b>Definition:</b> Class_matriz.hpp:140</div></div>
+<div class="ttc" id="aclass_operaciones_basicas_html_a126db4b5c3367dd48684590c954dd2af"><div class="ttname"><a href="class_operaciones_basicas.html#a126db4b5c3367dd48684590c954dd2af">OperacionesBasicas::multiplicacion</a></div><div class="ttdeci">static Matriz&lt; T &gt; multiplicacion(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)</div><div class="ttdoc">Realiza la multiplicación de dos matrices.</div></div>
+<div class="ttc" id="aclass_operaciones_basicas_html_a48529d410087eecb8cf9e6fb828c303e"><div class="ttname"><a href="class_operaciones_basicas.html#a48529d410087eecb8cf9e6fb828c303e">OperacionesBasicas::validarSumaResta</a></div><div class="ttdeci">static void validarSumaResta(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)</div><div class="ttdoc">Valida si dos matrices pueden ser sumadas o restadas.</div></div>
+<div class="ttc" id="aclass_operaciones_basicas_html_a7b418d7224f6431fdfd810c263bb1c49"><div class="ttname"><a href="class_operaciones_basicas.html#a7b418d7224f6431fdfd810c263bb1c49">OperacionesBasicas::resta</a></div><div class="ttdeci">static Matriz&lt; T &gt; resta(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)</div><div class="ttdoc">Realiza la resta de dos matrices.</div></div>
+<div class="ttc" id="aclass_operaciones_basicas_html_a94effc2bb073ff6d8fc96dc741a9113b"><div class="ttname"><a href="class_operaciones_basicas.html#a94effc2bb073ff6d8fc96dc741a9113b">OperacionesBasicas::suma</a></div><div class="ttdeci">static Matriz&lt; T &gt; suma(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)</div><div class="ttdoc">Realiza la suma de dos matrices.</div></div>
+<div class="ttc" id="aclass_operaciones_basicas_html_acc4a2ef9672deec1f9bb55a875b6c0b5"><div class="ttname"><a href="class_operaciones_basicas.html#acc4a2ef9672deec1f9bb55a875b6c0b5">OperacionesBasicas::validarMultiplicacion</a></div><div class="ttdeci">static void validarMultiplicacion(const Matriz&lt; T &gt; &amp;a, const Matriz&lt; T &gt; &amp;b)</div><div class="ttdoc">Valida si dos matrices pueden ser multiplicadas.</div></div>
+<div class="ttc" id="aclass_validador_de_entrada_html"><div class="ttname"><a href="class_validador_de_entrada.html">ValidadorDeEntrada</a></div><div class="ttdoc">Clase para validar la entrada de datos.</div><div class="ttdef"><b>Definition:</b> Class_matriz.hpp:216</div></div>
+<div class="ttc" id="aclass_validador_de_entrada_html_ae6904cfe58b3a29c7bcdd017f444fc0c"><div class="ttname"><a href="class_validador_de_entrada.html#ae6904cfe58b3a29c7bcdd017f444fc0c">ValidadorDeEntrada::validarDimensiones</a></div><div class="ttdeci">static void validarDimensiones(int tamano)</div><div class="ttdoc">Valida las dimensiones de la matriz.</div></div>
+<div class="ttc" id="aclass_validador_de_entrada_html_af10b736c8c8808a6eb1163d3fd6517f8"><div class="ttname"><a href="class_validador_de_entrada.html#af10b736c8c8808a6eb1163d3fd6517f8">ValidadorDeEntrada::validarTipoDato</a></div><div class="ttdeci">static void validarTipoDato(const std::string &amp;input)</div><div class="ttdoc">Valida el tipo de dato ingresado.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
