@@ -5,9 +5,9 @@
 Puede ejecutar el codigo de la siguiente manera en terminal:
 
 ```
-g++ main.cpp  mostrar_menu.cpp -o calculadora.txt
+g++ main.cpp -o correo.txt
 // Ejecutable:
-./calculadora.txt
+./correo.txt
 ```
 
 
