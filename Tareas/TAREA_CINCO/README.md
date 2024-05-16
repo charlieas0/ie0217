@@ -5,7 +5,7 @@
 Puede ejecutar el codigo de la siguiente manera en terminal:
 
 ```
-g++ main.cpp -o correo.txt
+g++ main.cpp ValidarEmail.cpp -o correo.txt
 // Ejecutable:
 ./correo.txt
 ```
