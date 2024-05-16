@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Validador de direccion electronica: ie0217</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Validador de direccion electronica
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">Manejo de excepciones y expresiones regulares</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">ie0217 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
+Tarea5</h1>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Charlie Arroyo. B90765</h1>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Parte práctica.</h1>
+<p>Puede ejecutar el codigo de la siguiente manera en terminal:</p>
+<div class="fragment"><div class="line">g++ main.cpp -o correo.txt</div>
+<div class="line">// Ejecutable:</div>
+<div class="line">./correo.txt</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+Parte teórica.</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+1. Expresiones regulares.</h2>
+<p><b>1. ¿Qué es una expresión regular y cuál es su propósito en programación?</b></p>
+<p>Una expresión regular, también conocida como regex o regexp, es una secuencia de caracteres que forma un patrón de búsqueda, su próposito en programación es poder manipular textos en realcion a ciertos criterios.</p>
+<p><b>2. ¿Qué significan los caracteres especiales . y * en una expresión regular?</b></p>
+<p>El punto (.) en caracteres especiales, representa cualquier carácter individual, menos el salto de línea (<br  />
+ en la mayoría de los motores de expresiones regulares). El asterisco (*) funciona para indicar que el elemento anterior puede aparecer cero o más veces</p>
+<p><b>3. ¿Cómo se pueden agrupar subexpresiones en una expresión regular?</b></p>
+<p>Agrupar subexpresiones utilizando paréntesis es una técnica poderosa en las expresiones regulares que permite capturar subgrupos y establecer límites para alternativas diferentes. <b>4. ¿Qué función cumple la barra invertida \ en una expresión regular?</b> La funcion barra invertida tiene dos funciones principales, incluyendo escapar caracteres especiales y representar ciertas secuencias especiales.</p>
+<p><b>5. Explique cómo se pueden capturar coincidencias usando paréntesis en una expresión</b> <b>regular.</b></p>
+<p>Usar paréntesis en una expresión regular permite capturar coincidencias específicas dentro de un texto, se puede hacer de la sigueinte manera:</p>
+<p>(\w+): Esto captura uno o más caracteres de palabra (letras, dígitos o inclusdo "_")</p>
+<p>@: Hace referencia a "@"</p>
+<p>(\w+.\w+): Esto captura una cadena de caracteres de palabra seguida de un punto y luego otra cadena de caracteres de palabra.</p>
+<p>**6. ¿Cuál es la diferencia entre \d y \D en una expresión regular?**</p>
+<p>En una expresión regular, los dos se utilizan para representar lo mismo, \d como \D se utilizan para representar caracteres numéricos, pero el significado es diferente:</p>
+<p>\d: Es para cualquier número del 0 al 9.</p>
+<p>\D: Coincide con cualquier carácter que no sea un número del 0 al 9.</p>
+<p><b>7. ¿Cómo se representa una clase de caracteres en una expresión regular?</b></p>
+<p>En una expresión regular, una clase de caracteres se puede representa usando parentesis cuadrados[ ]. esto permite definir un conjunto de caracteres entre los cuales se puede hacer coincidir un único carácter en la cadena de entrada.</p>
+<p><b>8. ¿Cuál es el propósito del modificador $ en una expresión regular?</b></p>
+<p>El modificador $ se utiliza para delimitar el final de una cadena de texto. Su propósito es asegurar que coincida solo si está al final de la cadena de entrada.</p>
+<p><b>9. Describa cómo validar una dirección de correo electrónico usando expresiones regulares</b> <b>en C++.</b></p>
+<p>Primero se deben incluir las librerias a utilizar.</p>
+<p>Segundo, hay que definir alguna funcion para validar la direccion de correo</p>
+<p>Tercero, utilizando Regex, dentro de la funcion se establece la direccion de correo que se debe seguir como <code>regex correo("\\b[A-Za-z0-9._%+-]+@xxxxxx+\\xxxxxx");</code></p>
+<p>Luego, se genera el main y se pide al usuario el correo.</p>
+<p><b>10. Discuta las implicaciones de rendimiento de utilizar expresiones regulares en aplicaciones de **software. ¿Qué técnicas se pueden aplicar para optimizar una expresión regular</b> <b>compleja, especialmente en contextos donde el tiempo de ejecución es crítico?</b></p>
+<p>Hay que saber que al utilizar expresiones regulares en aplicaciones de software donde el rendimiento es crítico, es primordial considerar las implicaciones de rendimiento. Esto implica optimizar el patrón de la expresión regular, evitar capturas innecesarias, utilizar funciones de búsqueda y realizar pruebas de rendimiento.</p>
+<p><b>11. ¿Qué es un Makefile y cuál es su función en un proyecto de C++?</b></p>
+<p>El uso de un Makefile es muy util ya que simplifica el proceso de compilación en un software, ya que automatiza tareas repetitivas y permite a los desarrolladores compilar su código de manera rapida y flexible.</p>
+<p><b>12. ¿Cuál es la diferencia entre una regla implícita y una regla explícita en un Makefile?</b></p>
+<p>Las reglas implícitas son reglas predeterminadas que se utilizan en el Make para construir archivos de salida como los ejecutables a partir de archivos de entrada, mientras que las reglas explícitas son reglas definidas de manera directa en el Makefile para manejar ciertos casos específicos o personalizados de construcción.</p>
+<p><b>13. Explique el prop´osito de las macros (variables) en un Makefile.</b></p>
+<p>Los macros en un Makefile se encargan facilitar la configuración, la reutilización, la legibilidad y el mantenimiento del código, así como la gestión de dependencias.</p>
+<p><b>14. ¿Qué es un objetivo (target) en un Makefile y cómo se define?</b></p>
+<p>En un Makefile, un objetivo (target) es un nombre para un archivo una tarea que se desea ejecutar. Estos estos pueden ser programas ejecutables, bibliotecas, archivos de objeto, documentos generados. Los objetivos son las unidades básicas de construcción en Makefiles entonces estos representan los resultados finales que desea tener el usuario.</p>
+<p><b>15. ¿Por qué es útil dividir un proyecto de C++ en m´ultiples archivos fuente y cómo ayuda</b> <b>el uso de Makefiles en este enfoque?</b></p>
+<p>Dividir un proyecto de C++ en múltiples archivos fuente proporciona beneficios en términos de modularidad, reutilización de código, asi como orden, que proporciona mejor manejo de errores. El uso de Makefiles en este enfoque facilita la automatización del proceso de construcción, la gestión de dependencias.</p>
+<p><b>16. ¿Cómo se pueden definir dependencias entre los archivos fuente en un Makefile?</b></p>
+<p>Hay algunas maneras de representar dependencias, podria ser usar variables, que se basa en definir una variable la que puede representar una lista de archivos fuente, lo bueno es que se podria añadir archivos a esta variable o eliminarlos, según se desee.</p>
+<p><b>17. Explique cómo se puede compilar un proyecto en diferentes sistemas operativos usando</b> <b>un solo Makefile.</b></p>
+<p>Para esto se debe tener en cuenta, que hay que tener consideraciones para el makefile, se puede lograr esto utilizando variables condicionales, herramientas de construcción multiplataforma, contenedores, o ajustes según lo que se necesita.</p>
+<p><b>18. ¿Cuál es el propósito de los comandos clean y all en un Makefile?</b></p>
+<p>El comando <b>all</b> se utiliza para construir todos los objetivos especificados en el Makefile.</p>
+<p>El comando <b>clean</b> se utiliza para limpiar el directorio de salida eliminando archivos generados durante el proceso de construcción.</p>
+<p><b>19. Describa cómo se pueden pasar argumentos desde la línea de comandos a un Makefile.</b></p>
+<p>Se pueden pasar argumentos desde la línea de comandos a un Makefile utilizando variables especiales, variables definidas por el usuario o parámetros de línea de comandos. <b>20. Proporcione un ejemplo de una regla en un Makefile que compile un archivo fuente</b> **.cpp a un archivo objeto .o.:**</p>
+<p>Una manera de compilar un archivo fuente a un archivo objeto. </p><div class="fragment"><div class="line">%.o: %.cpp</div>
+<div class="line">    g++ -c $&lt; -o $@</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+2. Makefile.</h2>
+<p><b>1. ¿Qué suelen contener las variables CC, CFLAGS, CXXFLAGS y LDFLAGS en un</b> <b>makefile?</b></p>
+<p>Suelen contener:</p>
+<p>CC: especifica el compilador que se utilizará.</p>
+<p>CFLAGS: Esta variable lo que contiene son flags(indicadores) que se pasarán al compilador C durante la compilación.</p>
+<p>CXXFLAGS: Similar a CFLAGS, pero es utilizado en el compilador C++.</p>
+<p>LDFLAGS: Esta variable contiene los flags que se pasarán al enlazador (linker) durante algún proceso de vinculación entre archivos objeto que sean generados por el compilador.</p>
+<p><b>2. ¿De qué se compone una regla en un Makefile?</b></p>
+<p>En un Makefile, una regla se compone por tres partes, el objetivo, las dependencias y las acciones.</p>
+<p><b>3. Defina qué es un target y cémo se relaciona con sus prerequisitos.</b></p>
+<p>En makefile, un "target" (objetivo) es basicamente un nombre que representa un archivo o una acción que se quiere construir. Y la manera de relacionarse con sus prerequisitos es por medio de los archivos o acciones de las cuales depende el target.</p>
+<p><b>4. ¿Para qué se utiliza la bandera -I, -c y -o del compilador gcc?</b></p>
+<p>En el comṕppppilador gcc, la bandera -I se utiliza para especificar directorios de inclusión para archivos de encabezado, -c se utiliza para compilar código fuente sin enlazar, y -o se utiliza para especificar el nombre del archivo de salida generado por el compilador, como un ejecutable por ejemplo.</p>
+<p><b>5. ¿Cémo se definen y se utilizan las variables en un Makefile? ¿Qué utilidad tienen?</b></p>
+<p>En un makefile, las variables se definen <code>VAR = var</code>. Estas variables pueden contener nombres de archivos, comandos, entre otros. Las variables en un makefile se utilizan para hacer que el proceso de escritura y mantenimiento de scripts de compilación sea más flexible y fácil de entender.</p>
+<p><b>6. ¿Qué utilidad tiene un @ en un Makefile?</b></p>
+<p>En un makefile, el símbolo @ se utiliza como prefijo en una regla que funciona para indicarle que el comando asociado no debe mostrarse en la salida del terminal cuando se ejecuta make.</p>
+<p><b>7. ¿Para qué se utiliza .PHONY en un Makefile?</b></p>
+<p>En un makefile .PHONY se usa para idecirle al make que hay objetivos que no corresponden a archivos reales en el sistema de archivos, entonces, lo que hace es que se asegura que make no trate de verificar si hay un archivo con ese nombre y que solo ejecute las acciones. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
