@@ -173,3 +173,11 @@ En un makefile, el símbolo @ se utiliza como prefijo en una regla que funciona 
 **7. ¿Para qué se utiliza .PHONY en un Makefile?**
 
 En un makefile .PHONY se usa para idecirle al make que hay objetivos que no corresponden a archivos reales en el sistema de archivos, entonces, lo que hace es que se asegura que make no trate de verificar si hay un archivo con ese nombre y que solo ejecute las acciones.
+
+
+
+# REFERENCIAS
+
+TylerMSFT. (2023, 16 junio). Expresiones regulares (C++). Microsoft Learn. https://learn.microsoft.com/es-es/cpp/standard-library/regular-expressions-cpp?view=msvc-170
+
+Makefile Tutorial by Example. (s. f.). Makefile Tutorial. https://makefiletutorial.com/
